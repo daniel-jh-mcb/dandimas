@@ -37,9 +37,9 @@ body {
 }
 
 .fairy {
-    height: 18vw;
+    height: 20vw;
     position: absolute;
-    top: 35vw;
+    top: 33vw;
     left: 36vw;
 }
 
@@ -104,36 +104,36 @@ body {
 }
 
 .fairy1 {
-    clip: rect(0, 10vw, 20vw, 0);
+    clip: rect(0, 15vw, 20vw, 0);
     margin-left: 3vw;
 }
 
 .fairy2 {
-    clip: rect(0, 30vw, 20vw, 10vw);
-    margin-left: -12vw;
+    clip: rect(0, 30vw, 20vw, 14vw);
+    margin-left: -14vw;
 }
 
 .fairy3 {
-    clip: rect(0, 48vw, 20vw, 28vw);
-    margin-left: -29vw;
+    clip: rect(0, 48vw, 20vw, 33vw);
+    margin-left: -33vw;
 }
 
 .fairy4 {
-    clip: rect(0, 65vw, 20vw, 47vw);
-    margin-left: -46.5vw;
+    clip: rect(0, 70vw, 20vw, 52.5vw);
+    margin-left: -52.5vw;
 }
 
 .fairy5 {
-    clip: rect(0, 80.5vw, 20vw, 62.5vw);
-    margin-left: -62.5vw;
+    clip: rect(0, 85.5vw, 20vw, 70vw);
+    margin-left: -70vw;
 }
 
 .fairy6 {
-    clip: rect(0, 95vw, 20vw, 78vw);
-    margin-left: -78vw;
+    clip: rect(0, 105vw, 20vw, 87vw);
+    margin-left: -87.5vw;
 }
 
 .fairy7 {
-    clip: rect(0, 113vw, 20vw, 95vw);
-    margin-left: -93vw;
+    clip: rect(0, 123vw, 20vw, 103vw);
+    margin-left: -104vw;
 }
