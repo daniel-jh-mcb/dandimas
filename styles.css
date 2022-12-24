@@ -31,6 +31,7 @@ body {
 
 .content {
     overflow-x: hidden;
+    width: 100%;
 }
 
 .fairy {
