@@ -113,7 +113,7 @@ function animationStepTwo() {
 
 function animationStepThree() {
   storyText.innerHTML = "\"We're ever so sorry for our tardiness, my lady!\" say the fairies. \
-                           We have been flying as fast as we could to get here in time! Only we \
+                           \"We have been flying as fast as we could to get here in time! Only we \
                            have been tasked with delivering a new magic scroll, and it's ever \
                            so confusing... It's addressed to seven different people and we don't \
                            know what to do!\"";

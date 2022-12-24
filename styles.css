@@ -29,10 +29,10 @@ body {
     font-weight: normal;
 }
 
-.content {
+/* .content {
     overflow-x: hidden;
     width: 100%;
-}
+} */
 
 .fairy {
     position: absolute;
