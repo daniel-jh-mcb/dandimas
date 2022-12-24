@@ -8,7 +8,6 @@
 
 html {
     height: 80vw;
-    overflow-x: hidden;
 }
 
 html {
@@ -28,6 +27,10 @@ body {
     text-align: center;
     font-family: "Luminari-Regular";
     font-weight: normal;
+}
+
+.content {
+    overflow-x: hidden;
 }
 
 .fairy {
