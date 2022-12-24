@@ -28,56 +28,23 @@ body {
     text-align: center;
     font-family: "Luminari-Regular";
     font-weight: normal;
-    font-size: 1.8vw;
-    padding-top: 9vw;
-    padding-bottom: 30vw;
-    line-height: 1.5vw;
-
-    width: 90vw;
 }
 
 .fairy {
-    height: 20vw;
     position: absolute;
-    top: 33vw;
-    left: 36vw;
 }
 
 .gameText {
     position: absolute;
     color: white;
-    font-size: 2.5vw;
-}
-
-.sonnetText {
-    font-size: 2.0vw;
-    line-height: 2.5vw;
 }
 
 #actionText {
-    top: 102vw;
-    width: 70vw;
-    left: 10vw;
-    padding-bottom: 20vw;
-}
-
-#storyText {
-    top: 70vw;
-    left: 0vw;
-    width: 100%;
-}
-
-#storyText.fairiesVisible {
-    top: 85vw;
+    text-align: center;
 }
 
 #sparkles {
     position: absolute;
-    top: 80vw;
-    left: 30.5vw;
-    width: 30vw;
-    height: 30vw;
-    clip: rect(0, 28vw, 28vw, 0);
     cursor: pointer;
 }
 
@@ -97,43 +64,127 @@ body {
 
 .fairies {
     position: absolute;
-    top: 65vw;
-    left: 0vw;
-    width: 90vw;
     height: auto;
 }
 
+/* Positional stuff */
+
+body {
+    padding-top: 5em;
+    padding-bottom: 13em;
+    line-height: 0.83em;
+
+    width: 50em;
+}
+
+.fairy {
+    height: 11em;
+    top: 18.4em;
+    left: 20em;
+}
+
 .fairy1 {
-    clip: rect(0, 15vw, 20vw, 0);
-    margin-left: 3vw;
+    clip: rect(0, 8.3em, 11.1em, 0);
+    margin-left: 1.66em;
 }
 
 .fairy2 {
-    clip: rect(0, 30vw, 20vw, 14vw);
-    margin-left: -14vw;
+    clip: rect(0, 16.7em, 11.1em, 7.8em);
+    margin-left: -7.8em;
 }
 
 .fairy3 {
-    clip: rect(0, 48vw, 20vw, 33vw);
-    margin-left: -33vw;
+    clip: rect(0, 26.7em, 11.1em, 18em);
+    margin-left: -18em;
 }
 
 .fairy4 {
-    clip: rect(0, 70vw, 20vw, 52.5vw);
-    margin-left: -52.5vw;
+    clip: rect(0, 38.9em, 11.1em, 29em);
+    margin-left: -29em;
 }
 
 .fairy5 {
-    clip: rect(0, 85.5vw, 20vw, 70vw);
-    margin-left: -70vw;
+    clip: rect(0, 47.5em, 11.1em, 38.5em);
+    margin-left: -38.5em;
 }
 
 .fairy6 {
-    clip: rect(0, 105vw, 20vw, 87vw);
-    margin-left: -87.5vw;
+    clip: rect(0, 58.3em, 11.1em, 48em);
+    margin-left: -48em;
 }
 
 .fairy7 {
-    clip: rect(0, 123vw, 20vw, 103vw);
-    margin-left: -104vw;
+    clip: rect(0, 68.3em, 11.1em, 57em);
+    margin-left: -57.2em;
+}
+
+.gameText {
+    line-height: 1.2em;
+}
+
+#storyText {
+    top: 20em;
+    left: 0em;
+    width: 100%;
+}
+
+#storyText.fairiesVisible {
+    top: 24.3em;
+}
+
+#actionText {
+    top: 33em;
+    width: 28.6em;
+    left: -1.43em;
+    padding-bottom: 5.7em;
+}
+
+#sparkles {
+    top: 49em;
+    left: 16.9em;
+    width: 16.6em;
+    height: 16.6em;
+    clip: rect(0, 15.6em, 15.6em, 0);
+}
+
+.sonnetText {
+    line-height: 0.89em;
+}
+
+.fairies {
+    top: 36.1em;
+    left: 0.5em;
+    width: 49em;
+}
+
+@media only screen and (max-width: 992px) {
+
+body {
+    font-size: 1.8vw;
+}
+
+.gameText {
+    font-size: 3.5vw;
+}
+
+.sonnetText {
+    font-size: 2.8vw;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+body {
+    font-size: 1.2vw;
+}
+
+.gameText {
+    font-size: 2.33vw;
+}
+
+.sonnetText {
+    font-size: 1.2em;
+}
+
 }

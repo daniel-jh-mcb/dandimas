@@ -97,10 +97,10 @@ function animationStepOne() {
 
 function animationStepTwo() {
   sparkles.classList.add('hidden-on-load')
-  storyText.innerHTML = "All seven fairies of the week appear before you, materialising<br></br>\
-                         out of a shimmering patch in the air. They begin to talk - it's<br></br>\
-                         hard to tell which one is speaking, as their language is less<br></br>\
-                         words than twinkling music, a magical sound that is both<br></br>\
+  storyText.innerHTML = "All seven fairies of the week appear before you, materialising \
+                         out of a shimmering patch in the air. They begin to talk - it's \
+                         hard to tell which one is speaking, as their language is less \
+                         words than twinkling music, a magical sound that is both \
                          heard and <i>felt</i> in your heart.";
   actionText.innerHTML = "[listen to what the fairies have to say]";
 
@@ -112,10 +112,10 @@ function animationStepTwo() {
 }
 
 function animationStepThree() {
-  storyText.innerHTML = "\"We're ever so sorry for our tardiness, my lady!\" say the fairies.<br></br>\
-                           We have been flying as fast as we could to get here in time! Only we<br></br>\
-                           have been tasked with delivering a new magic scroll, and it's ever<br></br>\
-                           so confusing... It's addressed to seven different people and we don't<br></br>\
+  storyText.innerHTML = "\"We're ever so sorry for our tardiness, my lady!\" say the fairies. \
+                           We have been flying as fast as we could to get here in time! Only we \
+                           have been tasked with delivering a new magic scroll, and it's ever \
+                           so confusing... It's addressed to seven different people and we don't \
                            know what to do!\"";
   actionText.innerHTML = "[ask if you can help the fairies]";
 
@@ -125,9 +125,9 @@ function animationStepThree() {
 }
 
 function animationStepFour() {
-  storyText.innerHTML = "\"Oh that would be wonderful!\" say the fairies. \"The scroll is<br></br>\
-                           addressed to The Nymph, The Nightingale, The Naiad, The Pearl,<br></br>\
-                           The Dream, Lady Lili of the Western Woods, and Indi. But how are<br></br>\
+  storyText.innerHTML = "\"Oh that would be wonderful!\" say the fairies. \"The scroll is \
+                           addressed to The Nymph, The Nightingale, The Naiad, The Pearl, \
+                           The Dream, Lady Lili of the Western Woods, and Indi. But how are \
                            we to deliver one scroll to all of those people?\"";
   actionText.innerHTML = "[\"Worry not, good fairies, for all of those people are me!\"]";
 
@@ -137,10 +137,10 @@ function animationStepFour() {
 }
 
 function animationStepFive() {
-  storyText.innerHTML = "\"Really? Truly? This is splendid news!\" say the fairies. \"This<br></br>\
-                           means that our long journey is over. But you must be an extremely<br></br>\
-                           magnificent person, to possess so many titles!\" The fairies look<br></br>\
-                           at you in admiration. After a moment, they collect themselves and<br></br>\
+  storyText.innerHTML = "\"Really? Truly? This is splendid news!\" say the fairies. \"This \
+                           means that our long journey is over. But you must be an extremely \
+                           magnificent person, to possess so many titles!\" The fairies look \
+                           at you in admiration. After a moment, they collect themselves and \
                            proffer a slightly glowing scroll to you. \"Your delivery, my lady!\""
   actionText.innerHTML = "[take the magic scroll from the fairies]";
 
@@ -150,9 +150,9 @@ function animationStepFive() {
 }
 
 function animationStepSix() {
-  storyText.innerHTML = "As you take the scroll, the fairies begin play a beautiful song. They<br></br>\
-                         produce small, sparkling instruments and start striking them delicately<br></br>\
-                         with miniscule mallets. Their twinkling music fills the air with a magical<br></br>\
+  storyText.innerHTML = "As you take the scroll, the fairies begin play a beautiful song. They \
+                         produce small, sparkling instruments and start striking them delicately \
+                         with miniscule mallets. Their twinkling music fills the air with a magical \
                          feeling of light, happiness, love, and excitement."
   actionText.innerHTML = "[unroll the scroll and begin to read]";
 
@@ -590,9 +590,9 @@ function finishReading() {
 }
 
 function endAnimation() {
-  storyText.innerHTML = "The fairies all smile at you as you finish reading the scrolls. \"We hope<br></br>\
-                         that you enjoyed our fairy song while you read!\" they say. \"We have one<br></br>\
-                         final message to pass on from the sender of the scrolls...\"<br></br>\
+  storyText.innerHTML = "The fairies all smile at you as you finish reading the scroll. \"We hope \
+                         that you enjoyed our fairy song while you read!\" they say. \"We have one \
+                         final message to pass on from the sender of the scroll...\"<br></br>\
                          \"<i>Merry Christmas!</i>\""
   actionText.innerHTML = "[return to the Dandimas calendar]";
 
