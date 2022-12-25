@@ -150,7 +150,7 @@ function animationStepFive() {
 }
 
 function animationStepSix() {
-  storyText.innerHTML = "As you take the scroll, the fairies begin play a beautiful song. They \
+  storyText.innerHTML = "As you take the scroll, the fairies begin to play a beautiful song. They \
                          produce small, sparkling instruments and start striking them delicately \
                          with miniscule mallets. Their twinkling music fills the air with a magical \
                          feeling of light, happiness, love, and excitement."
