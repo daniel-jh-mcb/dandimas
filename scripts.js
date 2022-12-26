@@ -81,6 +81,7 @@ function animationStepOne() {
   sparklesClicked = true;
   sparkles.classList.toggle('fade');
   storyText.classList.toggle('fade');
+  fairy.classList.toggle("fade");
   setTimeout( animationStepTwo, fadeDurationMs );
 }
 
@@ -147,7 +148,6 @@ function animationStepSix() {
 
   storyText.classList.toggle('fade');
   actionText.classList.toggle("fade");
-  fairy.classList.toggle("fade");
   document.getElementById("frosti").play();
   actionText.onclick = sonnetTransition;
 }
