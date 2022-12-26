@@ -41,12 +41,7 @@ document.getElementById("timeToWait").innerHTML = inWords(days)
 document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days...<br></br>"
 
 let showWithTodaysFairy = showScrollTextAndFairy.bind(null, (today.getDay() + 1) % 7 + 1);
-if (d != new Date("Dec 25, 2023").getDate()) {
-  window.onload = showWithTodaysFairy;
-}
-else{
-  window.onload = onPageLoadChristmas;
-}
+window.onload = showWithTodaysFairy;
 
 function showScrollTextAndFairy(fairyIndex) {
   let fairy =  document.getElementById("fairy");
@@ -54,9 +49,7 @@ function showScrollTextAndFairy(fairyIndex) {
   fairy.classList.remove("hidden-on-load");
   fairy.classList.toggle("fade");
   document.getElementById("scrollText").classList.toggle("fade");
-}
 
-function onPageLoadChristmas() {
   let sparkles = document.getElementById("sparkles");
   let storyText = document.getElementById("storyText");
   let fairies = document.getElementById("fairies");
@@ -71,10 +64,6 @@ function onPageLoadChristmas() {
   let sonnetText7 = document.getElementById("sonnetText7");
   let sonnetText9 = document.getElementById("sonnetText8");
   let nextSonnetText = document.getElementById("nextSonnetText");
-
-  scrollText.classList.toggle("fade");
-  storyText.classList.toggle("fade");
-  sparkles.classList.remove('hidden-on-load');
 
   sparkles.onclick = animationStepOne;
 }
@@ -158,6 +147,7 @@ function animationStepSix() {
 
   storyText.classList.toggle('fade');
   actionText.classList.toggle("fade");
+  fairy.classList.toggle("fade");
   document.getElementById("frosti").play();
   actionText.onclick = sonnetTransition;
 }
@@ -177,7 +167,8 @@ function sonnetTransition() {
     actionTextClicked = true;
     storyText.classList.toggle('fade');
     actionText.classList.toggle('fade');
-    scrollText.classList.toggle("fade")
+    scrollText.classList.toggle("fade");
+    fairy.classList.add('hidden-on-load');
 
     setTimeout( ()=> { actionText.innerHTML = ""; sonnet1line1(); }, fadeDurationMs );
   }
@@ -626,7 +617,6 @@ function endAnimation() {
   nextSonnetText.classList.toggle("fade");
   storyText.classList.toggle('fade');
   actionText.classList.toggle("fade");
-  getSoundAndFadeAudio("frosti");
 }
 
 var allowNextPress = false;
@@ -649,21 +639,4 @@ function sonnetNext( nextFunction ) {
       setTimeout( nextFunction, bjorkFadeDuration );
     }
   }
-}
-
-function getSoundAndFadeAudio (audiosnippetId) {
-
-  var sound = document.getElementById(audiosnippetId);
-  var fadeAudio = setInterval(function () {
-
-      // Only fade if past the fade out point or not at zero already
-      if (sound.volume > 0.0) {
-          sound.volume -= 0.1;
-      }
-      // When volume at zero stop all the intervalling
-      if (sound.volume <= 0.0) {
-          clearInterval(fadeAudio);
-          sound.pause();
-      }
-  }, 500);
 }
