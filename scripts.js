@@ -54,6 +54,9 @@ function showScrollTextAndFairy(fairyIndex) {
   fairy.classList.toggle("fade");
   document.getElementById("scrollText").classList.toggle("fade");
 
+  let rejoiceTextLeft = document.getElementById("rejoiceTextLeft");
+  let rejoiceTextRight = document.getElementById("rejoiceTextRight");
+
   let sparkles = document.getElementById("sparkles");
   let storyText = document.getElementById("storyText");
   let fairies = document.getElementById("fairies");
@@ -83,6 +86,8 @@ function animationStepOne() {
     return;
   }
   sparklesClicked = true;
+  rejoiceTextLeft.classList.toggle('fade');
+  rejoiceTextRight.classList.toggle('fade');
   sparkles.classList.toggle('fade');
   storyText.classList.toggle('fade');
   fairy.classList.toggle("fade");
