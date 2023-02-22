@@ -40,7 +40,11 @@ document.getElementById("timeToWait").innerHTML = inWords(days)
 
 document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days...<br></br>"
 
-let showWithTodaysFairy = showScrollTextAndFairy.bind(null, (today.getDay() + 1) % 7 + 1);
+let dayColors = ["#ffcc00","#3399ff","#006600","#ffff00","#6600cc","#773175","#000099"];
+
+dandimasText = document.getElementById("dandimasText").style.color = dayColors[today.getDay()];
+
+let showWithTodaysFairy = showScrollTextAndFairy.bind(null, (today.getDay() + 8) % 7 + 1);
 window.onload = showWithTodaysFairy;
 
 function showScrollTextAndFairy(fairyIndex) {
