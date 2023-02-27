@@ -38,7 +38,18 @@ var days = Math.ceil(distance / (1000 * 60 * 60 * 24));
 
 document.getElementById("timeToWait").innerHTML = inWords(days)
 
-document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days...<br></br>"
+if (d == new Date("Feb 28, 2023").getDate()) {
+  document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days,<br></br>and thus it is with great pleasure that we wish you a very happy...";
+  document.getElementById("dandimasText").innerHTML = "<i>Dandimas Eve!</i>";
+}
+else if (d == new Date("March 1, 2023").getDate()){
+  document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days,<br></br>and thus it is with the greatest pleasure of all that we wish you a very happy...";
+  document.getElementById("rejoiceTextLeft").innerHTML = "Rejoice, rejoice, the hallowed morn has dawned today at last,</br></br>The yearning times are over now, the aching days have passed!";
+  document.getElementById("rejoiceTextRight").innerHTML = "And so be merry, frabjous, glad, revel in your delight,</br></br>For in each-other's arms is where ye both shall sleep tonight!";
+}
+else {
+  document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days...<br></br>"
+}
 
 let dayColors = ["#ffcc00","#3399ff","#006600","#ffff00","#6600cc","#773175","#000099"];
 
