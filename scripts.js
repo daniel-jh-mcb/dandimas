@@ -26,26 +26,29 @@ today =  new Date();
 y = today.getFullYear();
 m = today.getMonth() + 1;
 d = today.getDate();
-document.getElementById("date").innerHTML = 'And lo, on this day, being the ' + stringifyNumber(d) + " day of the " + stringifyNumber(m) + " month<br></br>of the " + stringifyNumber(y - 2000) + " year since the dawning of the new millennium,<br></br>'tis a mere";
+dateText = 'And lo, on this day, being the ' + stringifyNumber(d) + " day of the " + stringifyNumber(m) + " month<br></br>of the " + stringifyNumber(y - 2000) + " year since the dawning of the new millennium";
+document.getElementById("date").innerHTML = dateText + ",<br></br>'tis a mere";
 
-countDownDate = new Date("Mar 1, 2023 00:00:01").getTime();
+for(var potentialDate = new Date(); potentialDate.getDate() != 14 || potentialDate.getDay() != 0; potentialDate.setDate(potentialDate.getDate() + 1 ) );
+
+countDownDate = potentialDate;
 
 // Find the distance between now and the count down date
 var distance = countDownDate - today.getTime();
 
 // Time calculations for days, hours, minutes and seconds
-var days = Math.ceil(distance / (1000 * 60 * 60 * 24));
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 
 document.getElementById("timeToWait").innerHTML = inWords(days)
 
-if (d == new Date("Feb 28, 2023").getDate()) {
+if (days == 1) {
   document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days,<br></br>and thus it is with great pleasure that we wish you a very happy...";
-  document.getElementById("dandimasText").innerHTML = "<i>Dandimas Eve!</i>";
+  document.getElementById("dandimasText").innerHTML = "<i>Fairy Sunday Eve!</i>";
 }
-else if (d == new Date("March 1, 2023").getDate()){
-  document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days,<br></br>and thus it is with the greatest pleasure of all that we wish you a very happy...";
+else if (days <= 0){
+  document.getElementById("date").innerHTML = dateText + "<br></br> the blessed morn of that most hallowed of days has come!<br></br><br></br>Thus it is with the greatest pleasure of all that we wish you a very happy..."
   document.getElementById("rejoiceTextLeft").innerHTML = "Rejoice, rejoice, the hallowed morn has dawned today at last,</br></br>The yearning times are over now, the aching days have passed!";
-  document.getElementById("rejoiceTextRight").innerHTML = "And so be merry, frabjous, glad, revel in your delight,</br></br>For in each-other's arms is where ye both shall sleep tonight!";
+  document.getElementById("rejoiceTextRight").innerHTML = "And so be merry, frabjous, glad, revel in your delight,</br></br>For in each-other's arms is where ye now may sleep each night!";
 }
 else {
   document.getElementById("moonrises").innerHTML = "moonrise" + (days == 1 ? "" : "s") + " more 'til the blessed morn of that most hallowed of days...<br></br>"
