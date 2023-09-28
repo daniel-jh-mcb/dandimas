@@ -29,10 +29,6 @@ body {
     font-weight: normal;
 }
 
-#dandimasText {
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
 /* .content {
     overflow-x: hidden;
     width: 100%;
@@ -182,6 +178,10 @@ body {
 
 @media only screen and (max-width: 992px) {
 
+#dandimasText {
+    text-shadow: 0.1vw 0 0 #000, 0 -0.1vw 0 #000, 0 0.1vw 0 #000, -0.1vw 0 0 #000;
+}
+
 body {
     font-size: 1.8vw;
 }
@@ -201,6 +201,10 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
+
+#dandimasText {
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
 
 body {
     font-size: 1.2vw;
